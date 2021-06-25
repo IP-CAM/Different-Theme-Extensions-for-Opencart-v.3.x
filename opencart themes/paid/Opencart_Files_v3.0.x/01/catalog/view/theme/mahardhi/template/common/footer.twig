@@ -1,0 +1,64 @@
+<footer class="mt-30">
+	<div class="footer-top">
+		<div class="container">
+			{{ footer_top }}
+			<div class="footer-middle row">
+				<div class="col-sm-3">
+					{{ footer_left }}
+				</div>
+				{% if informations %}
+		      	<div class="col-sm-2">
+			        <h5>{{ text_information }}</h5>
+			        <div class="footer-content">
+			        <ul class="list-unstyled">
+			         	{% for information in informations %}
+			          	<li><a href="{{ information.href }}">{{ information.title }}</a></li>
+			          	{% endfor %}
+			          	<li><a href="{{ contact }}">{{ text_contact }}</a></li>
+			        </ul>
+			        </div>
+		      	</div>
+		      	{% endif %}
+		      	<div class="col-sm-2">		      		
+			      		<h5>{{ text_account }}</h5>
+			      		<div class="footer-content">
+				        <ul class="list-unstyled">
+				          <li><a href="{{ account }}">{{ text_account }}</a></li>
+				          <li><a href="{{ order }}">{{ text_order }}</a></li>
+				          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+				          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+				           <li><a href="{{ return }}">{{ text_return }}</a></li>
+				        </ul>
+			        </div>
+		      	</div>
+		      	<div class="col-sm-2">
+		      		<h5>{{ text_extra }}</h5>
+			        <ul class="list-unstyled">
+			          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+			          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+			          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+			          <li><a href="{{ special }}">{{ text_special }}</a></li>
+			          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+			        </ul>		      		
+		      	</div>
+		      	<div class="col-sm-3">
+					{{ footer_right }}
+				</div>
+			</div>			
+		</div>		
+		<div class="footer_bottom clearfix">
+			<div class="container">
+				<p class="powered">{{ powered }}</p>
+				{{ footer_bottom }}
+			</div>
+		</div>
+	</div>
+	
+	{% for script in scripts %}
+		<script src="{{ script }}"></script>
+	{% endfor %}
+</footer>
+<!-- top scroll -->
+	<a href="#" class="scrollToTop back-to-top" data-toggle="tooltip" title="{{ text_backtop }}"><i class="fa fa-angle-up"></i></a>
+</body>
+</html>

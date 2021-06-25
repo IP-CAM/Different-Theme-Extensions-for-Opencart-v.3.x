@@ -1,0 +1,74 @@
+<div class="box all-products mt-30 clearfix">
+	<div class="box-heading">
+		<div class="box-content latest">
+			<div class="page-title toggled"><h3>{{ heading_title }}</h3></div>	
+			<div class="block_box">
+				{% set productForSlider = 1 %}
+				{% set productCount = products|length %}
+				<div id="latest-carousel" class="box-product {% if productCount > productForSlider %} product-carousel {% endif %} clearfix">
+					{% for product in products %}
+						{% if productCount > productForSlider %}
+							{% set class = ' col-xs-12' %}
+						{% else %}
+							{% set class = ' col-lg-3 col-md-6 col-sm-4 col-xs-4' %}
+						{% endif %}
+						<div class="product-layout {{class}}">
+							<div class="product-thumb transition clearfix">
+								<div class="image">
+									{% if product.thumb_swap %}
+										<a href="{{ product.href }}">
+											<img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+											<img class="img-responsive hover-img" src="{{ product.thumb_swap }}" title="{{ product.name }}" alt="{{ product.name }}"/>
+										</a>
+									{% else %}
+										<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a>
+									{% endif %}			
+									{% if  product.special %}
+										<div class="sale-text"><span class="section-sale">{{ text_sale }}</span></div>
+									{% endif %}	
+									<div class="button-group">
+										<button type="button" class="wishlist" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="icon-heart"></i></button>
+										<button type="button" data-toggle="tooltip" class="quickview-button" title="{{ button_quickview }}" onclick="quickView.ajaxView('{{ product.href }}');"><i class="icon-eye"></i></button>
+										<button type="button" class="compare" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="icon-arrow"></i></button>
+									</div>
+								</div>								
+								<div class="thumb-description clearfix">
+									<div class="caption">
+										<h4 class="product-title"><a href="{{ product.href }}">{{ product.name }}</a></h4>
+
+										{% if product.rating %}
+											<div class="rating">
+												{% for i in 1..5 %}
+													{% if product.rating < i %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
+												{% endfor %}
+											</div>
+										{% else %}
+											<div class="rating">
+												{% for i in 1..5 %}
+													<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+												{% endfor %}
+											</div>
+										{% endif %}		
+										
+										{% if product.price %}
+											<p class="price">
+												{% if not product.special %}
+													{{ product.price }}
+												{% else %}
+													<span class="price-new">{{ product.special }}</span><span class="price-old">{{ product.price }}</span>
+												{% endif %}										
+											</p>
+										{% endif %}
+										<button type="button" class="addcart" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}');">
+											<i class="icon-shopping-bag"></i><span>{{ button_cart }}</span>
+										</button>
+									</div>									
+								</div>	
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

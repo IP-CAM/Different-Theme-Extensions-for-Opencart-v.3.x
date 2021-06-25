@@ -1,0 +1,64 @@
+<div class="category-featured box mt-30">
+	<div class="category-box">
+		<div class="category-feature-list">
+			{% set categoryForSlider = 1 %}
+			{% set categoryCount = categories|length %}
+			<div id="category-carousel" class="box-category {% if categoryCount > categoryForSlider %}category-carousel{% endif %} clearfix">						
+				{% set categoryCount = categories|length %}
+				{% if categoryCount > categoryForSlider %}
+				{% set class = 'col-xs-12' %}
+				{% else %}
+				{% set class = 'col-lg-3 col-md-4 col-sm-4 col-xs-6' %}
+				{% endif %}
+				{% for category in categories %}
+				<div class="category-layout {{class}}">
+					<div class="category-thumb">
+						<div class="images-hover image">
+							<a href="{{ category.href }}">
+								<img src="{{ category.thumb }}" alt="{{ category.name }}" title="{{ category.name }}" class="img-responsive" />
+							</a>
+						</div>
+						<div class="caption">
+							<div class="cat-title">
+								<h4><a href="{{ category.href }}">{{ category.name }}</a></h4>
+							</div>
+					  </div> 
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+ <script><!--
+// set slider
+const dirCategory = $('html').attr('dir');
+
+$('.category-carousel').each(function () {
+	if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+		$(this).addClass('owl-carousel owl-theme');
+			const items = $(this).data('items') || 6;
+			const sliderOptions = {
+				loop: true,
+				rewind: true,
+				nav: false,
+				navText: ['<i class="fa fa-angle-left">','<i class="fa fa-angle-right">'],
+				dots: false,
+				items: items,
+				autoplay: true,
+				autoplayTimeout: 4000,
+				responsiveRefreshRate: 200,
+				responsive: {
+				0: { items: 1 },
+				320: { items: 2 },
+				376: { items: 3 },
+				481: { items: 4 },
+				681: { items: 5 },
+				1441: { items: items }
+			}
+		};
+		if (dirCategory == 'rtl') sliderOptions['rtl'] = true;
+		$(this).owlCarousel(sliderOptions);
+	}
+});
+//--></script>

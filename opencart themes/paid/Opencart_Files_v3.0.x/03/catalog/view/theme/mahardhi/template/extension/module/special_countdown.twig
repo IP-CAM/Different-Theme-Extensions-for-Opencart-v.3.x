@@ -1,0 +1,118 @@
+<div class="special-countdown mt-30 box">
+	<div class="countdown-carousel list-products">	
+		<div class="page-title"><h3>{{ heading_title }}</h3></div>	
+		<div class="countdown-inner">
+			{% set productForSlider = 1 %}
+			{% set productCount = products|length %}
+			<div id="special-count" class="box-product {% if productCount > productForSlider %} special-count-carousel {% endif %} clearfix">
+				{% if productCount > productForSlider %}
+					{% set class = ' col-xs-12' %}
+				{% else %}
+					{% set class = ' col-lg-12 col-md-12 col-sm-4 col-xs-4' %}
+				{% endif %}
+				{% for product in products %}
+				{% if product.to_date  !=  '0000-00-00' %}
+				<div class="product-layout {{class}}">
+		    		<div class="product-thumb transition clearfix">
+		    			<div class="countdown-images">
+							<div class="special-image">
+								<div class="image">
+									<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a>
+									{% if  product.special %}
+										<div class="sale-text"><span class="section-sale">{{ text_sale }}</span></div>
+									{% endif %}
+									<div class="button-group">
+										<button type="button" data-toggle="tooltip" class="quickview-button" title="{{ button_quickview }}" onclick="quickView.ajaxView('{{ product.href }}');"><i class="icon-eye"></i></button>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="thumb-description">
+							<div class="caption">									
+								<h4 class="product-title"><a href="{{ product.href }}">{{ product.name }}</a></h4>
+								{% if product.rating %}
+									<div class="rating">
+										{% for i in 1..5 %}
+											{% if product.rating < i %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
+										{% endfor %}
+									</div>
+								{% else %}
+									<div class="rating">
+										{% for i in 1..5 %}
+											<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+										{% endfor %}
+									</div>
+								{% endif %}
+								{% if product.price %}
+									<div class="price">
+									  {% if not product.special %}
+									  	{{ product.price }}
+									  {% else %}
+											<span class="price-new">{{ product.special }}</span><span class="price-old">{{ product.price }}</span>
+									  {% endif %}
+									  {% if product.tax %}
+									  	<span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+									  {% endif %}									
+									</div>
+								{% endif %}
+								<p class="description">{{ product.description }}</p>
+								{% if product.to_date !=  '0000-00-00' %}
+								{% set date_time = product.to_date|date('Y-m-d') %}
+									<div id="countdown_{{ product.product_id }}" class="item-countdown" data-date="{{ date_time }}"></div>
+								{% endif %}		
+								<div class="button-group btn-list">	
+									<button type="button" class="addcart" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}');">
+										<i class="icon-shopping-bag"></i><span>{{ button_cart }}</span>
+									</button>
+									<button type="button" class="wishlist" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="icon-heart"></i></button>
+									<button type="button" class="compare" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="icon-arrow"></i></button>
+								</div>
+							</div>								
+						</div>
+												
+						{% set date_time = product.to_date|date('Y-m-d') %}
+						<script type="text/javascript">
+							jQuery(document).ready(function($){
+								$(".item-countdown").each(function(){
+									var date = $(this).data('date');
+									$(this).lofCountDown({
+									  TargetDate:date,
+									  DisplayFormat:"<div>%%D%% <span>{{ text_days }}</span></div><div>%%H%% <span>{{ text_hours }}</span></div><div>%%M%% <span>{{ text_minutes }}</span></div><div>%%S%% <span>{{ text_seconds }}</span></div>"
+									});
+								});
+							});   
+					 	</script>
+					</div>
+				</div>
+			{% endif %}
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript"><!--
+		const additional1 = $('html').attr('dir');
+		$('.special-count-carousel').each(function () {
+			// if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+				$(this).addClass('owl-carousel owl-theme');
+				const items = $(this).data('items') || 2;
+				const sliderOptions = {
+					loop: false,
+					nav: true,
+					navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+					dots: false,
+					items: items,
+					responsiveRefreshRate: 200,
+					responsive: {
+						0: { items:1 },
+						992: { items:3 },
+						1441: { items:items }
+					}
+				};
+				if (additional1 == 'rtl') sliderOptions['rtl'] = true;
+				$(this).owlCarousel(sliderOptions);
+			// }
+		});
+
+--></script>

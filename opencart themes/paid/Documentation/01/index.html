@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Documentation -  Opencart Theme Flipmart 01</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />	
+
+		<script>document.createElement('section');var duration='500',easing='easeInQuart';</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/script.js" type="text/javascript"></script>
+
+		<script src="assets/js/jquery.scrollTo.js"></script>
+		<script src="assets/js/jquery.easing.js"></script>
+	</head>
+
+	<body>
+  		<div id="documenter_sidebar">
+  			<div class="logo"><img src="assets/img/logo.png" alt="logo"/></div>
+  			<div id="documenter_nav">
+  				<ul id="" class="menu">
+   					<li><a class="active" href="#home">Start</a></li>
+					<li class="layout"> <a href="#installation" >Installation </a></li>
+				    <li class="layout"> <a href="#theme" >Theme Settings</a></li>
+					<li class="layout"> <a href="#logoset">Logo Settings</a></li>
+					<li class="layout"> <a href="#language">Language Settings</a></li>
+				    <li class="layout"> <a href="#bannerset">Banners</a></li>   				    
+					<li class="layout"> <a href="#html">HTML Content</a></li>
+					<!-- <li class="layout"> <a href="#producttab">Mahardhi Product Tabs</a></li>	 -->
+					<li class="layout"> <a href="#featured">Featured Products</a></li>
+					<li class="layout"> <a href="#special">Special Products</a></li>
+				    <li class="layout"> <a href="#bestseller"> Bestseller Products </a></li>
+				    <li class="layout"> <a href="#latest">Latest Products</a></li>
+				    <li class="layout"> <a href="#dealofday"> Mahardhi Special Countdown </a></li>
+				    <li class="layout"> <a href="#mahardhicategory"> Mahardhi Category </a></li>
+					<li class="layout"> <a href="#Mahardhiblog">Mahardhi Blogs</a></li>
+					<li class="layout"> <a href="#MahardhiTestimonial">Mahardhi Testimonial</a></li>
+					<li class="layout"> <a href="#newsletter"> Mahardhi Newsletters </a></li>
+					<li class="layout"> <a href="#mahardhisearch"> Mahardhi Search </a></li>
+				    <li class="layout"> <a href="#account">Account</a></li>
+					<li class="layout"> <a href="#information"> Information </a></li>
+					<li class="layout"> <a href="#filter">Filter</a></li>
+					<li class="layout"> <a href="#carousel">Carousel</a></li>
+					<li class="layout"> <a href="#contactus">Contact Us</a></li>
+					<li class="layout"><a href="#layoutsetting">Layout Setting </a></li>
+					<li class="layout"><a href="#additional">Additional Setting </a></li>
+  				</ul>
+			</div>
+		</div>
+		<div class="documenter_content">
+			<section id="home">
+  				<h2 style="color:#000;">Opencart Theme Flipmart 01</h2>
+			</section>
+			<section id="installation">
+				<h2 id="installation" style="">Method 1 : Installation</h2>
+				<div class="containers">
+					<div class="doc-sec-content">
+						<p>This documentation will give you an understanding of how <strong>Flipmart 01</strong> is structured and guide you in performing the most common functions				
+					</div>
+					<div class="doc-sec-content">
+						<p>
+							<span class="label label-danger">Note</span>
+							<span class="red-color">
+								Please, read the whole section, before attempting to install the theme.<br/>
+								it is recommend to always backup your system before making any upgrades or changes!<br/><br/>
+							</span>
+						</p>
+					</div>
+					<h2 style="padding-top:30px;">Opencart Installtion</h2>
+					<p>For installation of Opencart, you just need to follow these steps,
+						<a href="http://docs.opencart.com/installation/" target="_blank" title="Installing OpenCart">Installation</a>
+					</p>
+					<p>
+					To install OpenCart template you need to upload it’s files to your hosting server<br/>
+					Extract the downloaded zip file and Upload all files and folders from the “Opencart Files” to your opencart root directory
+					</p>
+					<p>
+					<strong>"admin"</strong> (Overwrite this folder)<br/>
+					<strong>"catalog"</strong> (Overwrite this folder)<br/>
+					<strong>"image"</strong> (Overwrite this folder)<br/><br />
+					</p>
+  					<p><img alt="" src="assets/img/image_1.jpg"></p>
+					<br />
+  				</div>
+			
+		   		<div class="containers">
+		    		<h2 style="padding-top:30px;"> Import Sample Data</h2>
+		    		<div class="doc-sec-content">
+					<p>
+						you can find this file "Sample_Data" Folder in our package<br/>
+						Sample_Data_01.sql -- For all theme content<br/>
+						Go to Admin <strong>System &rarr; Maintenance &rarr; Backup/restore </strong><br/>
+						select <strong>Restort tab </strong>click on import button and select import.sql file</span>
+					</p>
+					<br/>
+					<p>
+						<a href="assets/img/import-sample-data.jpg" target="_blank">
+							<img class="aligncenter" src="assets/img/import-sample-data.jpg" alt="import-Sample-Data"/>
+						</a>
+					</p>
+				</div>
+		   
+		   		<div class="containers">
+		    		<h2  style="padding-top:30px;">Module Access Permission</h2>
+		    		<div class="doc-sec-content">
+					<p>
+						Might you display "Access Permission denied" error what you try to access Third-Party Modules,<br/>
+						Don't worry about it, Just need to assign administrator user-group permission.<br/>
+						Go to <span class="highlight-text">&ldquo;System &rarr; Users &rarr; User Groups &rarr; Administrator &rarr; Select all access permission and modify permission&rdquo;</span><br/>
+						Click on <strong>&ldquo;Save&rdquo;</strong> button at top right corner.</li><br/>
+					</p>
+					<br/>
+					<p>
+						<a href="assets/img/module-access-permission.jpg" target="_blank"><img class="aligncenter" src="assets/img/module-access-permission.jpg" alt="Access Permission"/></a>
+					</p>
+				</div>
+		    </section>
+		    <div class="clear"></div>
+		   	<section id="theme">
+		   		<div class="containers">
+		    		<h2 id="theme" style="padding-top:30px;"> Method 2 :Config Theme</h2>
+		    		<h3>Theme activation</h3>
+					<ul>
+						<li>Now we have to set our Theme from Admin site</li>
+						<li>Goto Admin  <strong>Extensions</strong> &gt; <strong>Extensions</strong>,</li>
+			      		<li>Select <strong>Themes</strong> from Dropdown as shown below,</li><br />
+		     				<ul>
+								<li>
+									<a href="assets/img/Themes.jpg" target="_blank"><img class="img-border" src="assets/img/Themes.jpg" alt=""></a>
+								</li>
+							</ul><br/>
+							<li>Now we have to install our Mahardhi Store Theme</li>
+							<li>Click On <strong>Install</strong> button  </li><br />
+							<ul>
+								<li>
+									<a href="assets/img/Extension1.png" target="_blank"><img class="img-border" src="assets/img/Extension1.png" alt=""></a>
+								</li>
+							</ul><br/><br />
+							<li><p>Select <strong>Your Store &gt; Edit</strong></p><br />
+							<ul>
+								<li>
+									<a href="assets/img/Extensions.png" target="_blank"><img class="img-border" src="assets/img/Extensions.png" alt=""></a>
+								</li>
+							</ul><br/>
+							<p>
+						        Theme Directory : (select)<strong> mahardhi </strong><br/>
+						        Status : <strong> Enable </strong><br />
+						        Default Items Per Page : <strong>12</strong><br/>
+						        List Description Limit : <strong>250</strong><br/>
+								Now <strong>Set Image Size</strong><br/>
+								Category Image : <strong>1380 X 260</strong><br />
+								Product Image Thumb : <strong>660 X 660</strong><br />
+								Product Image Popup : <strong>1000 X 1000</strong><br />
+								Product Image List : <strong>320 X 320</strong><br />
+								Additional Product Image : <strong>660 X 660</strong><br />
+								Related Product Image : <strong>320 X 320</strong><br />
+								Compare Image Size : <strong>80 X 80</strong><br />
+								Wishlist Image Size : <strong>80 X 80</strong><br />
+								Cart Image Size : <strong>80 X 80</strong><br />
+								<strong>Colors:</strong><br />
+								Primary Color : <strong>#252525</strong> (Set Theme Primary Color)<br />
+								Primary Hover Color : <strong>#f33535</strong> (Set Theme Primary Hover Color)<br />
+								Secondary Color : <strong>#ffffff</strong> (Set Theme Secondary Color)<br />
+								Secondary Light Color : <strong>#757575</strong> (Set Theme Secondary Light Color)<br />
+								Background Color : <strong>#f1f3f6</strong> (Set Theme Background Color)<br />
+								Border Color : <strong>#e2e2e2</strong> (Set Theme Border Color)<br />
+								Click <strong>Save</strong> button.<br/>
+				    		</p>
+						</li>
+					</ul><br />
+					<ul>
+						<li>
+							<a href="assets/img/theme_panel.png" target="_blank">
+								<img class="img-border" src="assets/img/theme_panel.png" alt="">
+							</a>
+						</li>
+					</ul>
+					<br />
+					<p>Goto Admin  <strong> System &gt; Setting &gt; &ldquo; your store &rdquo; Edit<br /></strong>
+			      			<p>
+								<a href="assets/img/theme_store.png" target="_blank"><img class="img-border" src="assets/img/theme_store.png" alt=""/></a>
+							</p>
+							<p>Select <strong>General</strong> tab</p>
+			      			<p>Select <strong>&ldquo; Mahardhi Store Theme &rdquo;</strong> from Dropdown as shown below,</p>
+			      			Click <strong>Save</strong> button.<br /><br />
+			      			<p>
+								<a href="assets/img/general_settings.png" target="_blank">
+									<img class="img-border" src="assets/img/general_settings.png" alt=""/>
+								</a>
+							</p>
+						</p><br />
+				</div>
+		    </section>
+			<div class="clear"></div>
+    		<section id="logoset">
+				<h2 id="logoset" style="padding-top:30px;"> Method 3 : Logo</h2>
+				<div class="containers">
+					<div class="text">
+						<p>Goto Admin  <strong> System &gt; Setting &gt; &ldquo; your store &rdquo; Edit &gt; Image</strong> (image tab).<br />
+		      			<strong>tab then set  logo of your site.</strong>
+		      			Select Store &gt; <strong>Edit</strong>
+			      			<p>
+								<a href="assets/img/theme_store.png" target="_blank"><img class="img-border" src="assets/img/theme_store.png" alt=""/></a>
+							</p>
+			      			<p>Select <strong>Image</strong> tab</p>
+			      			Click <strong>Save</strong> button.
+							<p>
+								<a href="assets/img/theme_logo.png" target="_blank">
+									<img class="img-border" src="assets/img/theme_logo.png" alt=""/>
+								</a>
+							</p>
+						</p><br/>
+					</div>
+				</div>
+		    </section>
+			<div class="clear"></div>
+		    <section id="language">
+				<div class="containers">
+		      		<h2 id="language" style="padding-top:30px;"> Method 4 : Language </h2>
+		      		<h3>Language activation</h3>
+		      		<ul>
+		  				<li>If you want to enable languages then you can download it from this site <a href="http://www.opencart.com">http://www.opencart.com </a>.</li>
+		  				<li>Language directory root : <strong>"admin/language"</strong> and <strong>"catalog/language"</strong>.</li>
+		  			</ul><br />
+					<div class="text">
+						To Enable Languages login to your admin panel and do following step<br /><br/>
+						<p>
+						 	<strong> For Example To add Arbic Language :</strong> <br/>
+							Goto Admin  <strong>System &gt; Localisation &gt;</strong><strong> Languages</strong><br/>
+							<strong>Add New</strong> button to add new Language<br/>
+							<strong>Language Name : </strong> Arbic<br/>
+							<strong>Code : </strong> ar<br/>
+							<strong>Locale : </strong> ar<br/>
+							<strong>Status : </strong> Enable<br/>
+							<strong>Sort Order : </strong> 1 or 2 as you like<br/>
+							Click on <strong>Save</strong> button.<br/>
+							<br/>
+		      				<p>
+							<a href="assets/img/arbic_1.png" target="_blank">
+								<img class="img-border" src="assets/img/arbic_1.png" alt=""/>
+							</a>
+							</p>
+							<p>
+							<a href="assets/img/arbic_2.png" target="_blank">
+								<img class="img-border" src="assets/img/arbic_2.png" alt=""/>
+							</a>
+							</p>
+							Also same a way you can do the settings for other Languages.
+						</p>
+					</div>
+				</div>
+		  	</section>
+			<div class="clear"></div>
+		    <section id="bannerset">
+				<h2 id="bannerset" style="padding-top:30px;"> Method 5 : Banners </h2>
+				<div class="containers">
+					<div class="text">
+						<h3 class="title1" id="mainbanner" style="padding-top:10px;"> Main Banner </h3>
+						<p>
+		        			Goto Admin  <strong>Design &gt; Banners</strong><br />
+							Now &rdquo;<strong>+ Add New </strong>&rdquo;  button.<br />
+							Banner name : <strong>Home Page Slideshow</strong><br />
+						 	Status : <strong>Enabled</strong><br />
+							and then  click  on <strong>+ Add </strong> button<br />
+		        			<strong>set size of each image banner of your site</strong>
+							Give title of your banner  and click on image to upload your banner<br />
+							and then again click on <strong> + Add </strong> button and upload another banners<br />
+							then click &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p><br/>
+						<a href="assets/img/slideshow.png" target="_blank">
+							<img class="img-border" src="assets/img/slideshow.png" alt=""/>
+						</a>
+						<br/>
+		      			<h3>Main Banner activation</h3>
+						Go to Admin <strong>Extensions</strong>  &gt; <strong>Extensions</strong> &gt;  <strong>Modules</strong>from Dropdown.<br />
+			       		Now select <strong>Slideshow</strong>, then &gt; Edit &gt; button<br />
+						Module Name : <strong>Slideshow - Home Page</strong><br />
+						Banner : <strong>Home Page Slideshow</strong> select<br />
+						Give Width and Height : <strong>1080 X 520</strong><br />
+						Status select : <strong>Enabled</strong><br />
+						click on  &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+						<a href="assets/img/slideshow_1.png" target="_blank">
+							<img class="img-border" src="assets/img/slideshow_1.png" alt=""/>
+						</a>
+				  		<div class="clear bottom-space"></div>
+
+				  		<div class="clear"></div>
+						<h3 class="title1" id="leftbanner" style="padding-top:30px;">Left Banner </h3>
+						<p>
+		        				Go to Admin <strong> Design &gt;Banners</strong><br />
+								Click on &ldquo;<strong> + Add New  </strong>&rdquo; button<br />
+					    		Banner Name : <strong>Left Banner</strong><br />
+					 			Status select : <strong>Enabled</strong><br />
+								and click  on <strong>Add Banner</strong> button<br />
+		        				Give title of your banner  and click on image to upload your banner<br />
+								and then click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p><br/>
+						<a href="assets/img/leftbanner.png" target="_blank">
+							<img class="img-border" src="assets/img/leftbanner.png" alt=""/>
+						</a><br/>
+		       			<h3>Left Banner Activation</h3>
+					 	Activate  your Left Banner  go to Admin  <strong>Extensions</strong>  &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown<br />
+		       			Now select <strong>Banner &gt; + Add New </strong>Banner<br />
+						Module name : <strong>Left Banner</strong><br />
+						Banner select : <strong>Left Banner</strong><br />
+						Give Width &amp; Height : <strong> 270 X 420 </strong><br />
+						From status select : <strong>Enabled</strong><br />
+						And then click on  &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+						<a href="assets/img/leftbanner_1.png" target="_blank">
+							<img class="img-border" src="assets/img/leftbanner_1.png" alt=""/>
+						</a><br/>
+						<div class="clear bottom-space"></div>
+				  		<div class="clear"></div>	
+
+				  		<h3 class="title1" id="leftbanner" style="padding-top:30px;">Right Banner </h3>
+						<p>
+		        				Go to Admin <strong> Design &gt;Banners</strong><br />
+								Click on &ldquo;<strong> + Add New  </strong>&rdquo; button<br />
+					    		Banner Name : <strong>Right Banner</strong><br />
+					 			Status select : <strong>Enabled</strong><br />
+								and click  on <strong>Add Banner</strong> button<br />
+		        				Give title of your banner  and click on image to upload your banner<br />
+								and then click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p><br/>
+						<a href="assets/img/rightbanner.png" target="_blank">
+							<img class="img-border" src="assets/img/rightbanner.png" alt=""/>
+						</a><br/>
+		       			<h3>Right Banner Activation</h3>
+					 	Activate  your Left Banner  go to Admin  <strong>Extensions</strong>  &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown<br />
+		       			Now select <strong>Banner &gt; + Add New </strong>Banner<br />
+						Module name : <strong>Right Banner</strong><br />
+						Banner select : <strong>Right Banner</strong><br />
+						Give Width &amp; Height : <strong> 270 X 420 </strong><br />
+						From status select : <strong>Enabled</strong><br />
+						And then click on  &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+						<a href="assets/img/rightbanner_1.png" target="_blank">
+							<img class="img-border" src="assets/img/rightbanner_1.png" alt=""/>
+						</a><br/>
+						<div class="clear bottom-space"></div>
+				  		<div class="clear"></div>				  		
+				  	</div>
+				</div>
+			</section>		 	
+			<div class="clear"></div>			
+	  		<section id="html">
+				<h2 id="html" style="padding-top:30px;"> Method 6 : HTML Content </h2>
+					<div class="containers">
+						<div class="text">
+							<p>
+			 					Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	    						select <strong>HTML Content</strong> <strong> &gt; Edit</strong> ( If Edit link is not active then Click on Install link)<br />
+
+							  	<p>
+									<h3>Banner - Home page</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+									Name : <strong>Banner - Home page</strong> <br />
+									Then click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+		    						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">
+									&lt;div class="banner-outer container-outer html1"&gt;<br />
+									  	&lt;div class="row"&gt;<br />
+									    	&lt;div class="col-md-12 col-xs-6"&gt;<br />
+									      		&lt;div class="banner1"&gt;<br />
+									        		&lt;div class="inner1"&gt;<br />
+									          			&lt;a href="#"&gt;&lt;img src="image/catalog/banners/banner1.jpg" alt="" class="img-responsive"&gt;&lt;/a&gt;<br />
+									        		&lt;/div&gt;<br />                                        
+									          		&lt;div class="inner2"&gt;<br />
+									            		&lt;div class="promo-text-box"&gt;<br />
+									              			&lt;span class="promo-title"&gt;Watches&lt;/span&gt;<br />
+									              		&lt;/div&gt;<br />
+									          		&lt;/div&gt;<br />
+									      		&lt;/div&gt;<br />
+									    	&lt;/div&gt;<br />
+									    	&lt;div class="col-md-12 col-xs-6"&gt;<br />
+									      		&lt;div class="banner2"&gt;<br />
+									       			&lt;div class="inner1"&gt;<br />
+									          			&lt;a href="#"&gt;&lt;img src="image/catalog/banners/banner2.jpg" alt="" class="img-responsive"&gt;&lt;/a&gt;<br />
+									          		&lt;/div&gt;<br />
+									          		&lt;div class="inner2"&gt;<br />
+									            		&lt;div class="promo-text-box"&gt;<br />
+									              			&lt;span class="promo-title"&gt;Headphones&lt;/span&gt;<br />
+									            		&lt;/div&gt;<br />
+									          		&lt;/div&gt;<br />
+									        	&lt;/div&gt;<br />
+									   	 	&lt;/div&gt;<br />
+									  	&lt;/div&gt;<br />
+									&lt;/div&gt;<br />
+	    							</div><br /><br />
+									<a href="assets/img/html_content_1.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_1.png" alt=""/>
+									</a>
+								</p><br/>
+
+								<p>
+									<h3>Banner2 - Home page</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+									Name : <strong>Banner2 - Home page</strong> <br />
+									Then click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+		    						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">
+									&lt;div class="banner-outer html2 mt-30"&gt;<br />
+									  &lt;div class="row"&gt;<br />
+									    &lt;div class="col-xs-6"&gt;<br />
+									      &lt;div class="banner3"&gt;<br />
+									        &lt;div class="inner1"&gt;<br />
+									          &lt;a href="#"&gt;&lt;img src="image/catalog/banners/banner3.jpg" alt="" class="img-responsive"&gt;&lt;/a&gt;<br />
+									        &lt;/div&gt;<br />
+									        &lt;div class="inner2"&gt;<br />
+									          &lt;div class="promo-text-box"&gt;<br />
+									            &lt;h3 class="promo-title"&gt;Best Deals on Laptops&lt;/h3&gt;<br />
+									            &lt;div class="promo-price"&gt;From $999.00&lt;/div&gt;<br />
+									            &lt;div class="promo-desc"&gt;Complete Laptop Protection&lt;/div&gt;<br />
+									          &lt;/div&gt;<br />
+									        &lt;/div&gt;<br />
+									      &lt;/div&gt;<br />
+									    &lt;/div&gt;<br />
+									    &lt;div class="col-xs-6"&gt;<br />
+									      &lt;div class="banner4"&gt;<br />
+									        &lt;div class="inner1"&gt;<br />
+									          &lt;a href="#"&gt;&lt;img src="image/catalog/banners/banner4.jpg" alt="" class="img-responsive"&gt;&lt;/a&gt;<br />
+									        &lt;/div&gt;<br />
+									        &lt;div class="inner2"&gt;<br />
+									          &lt;div class="promo-text-box"&gt;<br />
+									            &lt;h3 class="promo-title"&gt;Deals on Tablets&lt;/h3&gt;<br />
+									            &lt;div class="promo-price"&gt;From $599.00&lt;/div&gt;<br />
+									            &lt;div class="promo-desc"&gt;No Cost EMI From $99.00/m*&lt;/div&gt;<br />
+									          &lt;/div&gt;<br />
+									        &lt;/div&gt;<br />
+									      &lt;/div&gt;<br />
+									    &lt;/div&gt;<br />
+									  &lt;/div&gt;<br />
+									&lt;/div&gt;<br />
+	    							</div><br /><br />
+									<a href="assets/img/html_content_2.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_2.png" alt=""/>
+									</a>
+								</p><br/>
+
+								<p>
+									<h3>Banner3 - Home page</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+									Name : <strong>Banner3 - Home page</strong> <br />
+									Then click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+		    						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">
+									&lt;div class="html3 mt-30"&gt;<br />
+									  &lt;div class="html-content"&gt;<br />
+									    &lt;h3 class="promo-title"&gt;Free Shipping On All Orders&lt;/h3&gt;<br />
+									    &lt;span class="promo-desc"&gt;Valid On all Order Untill This Week. Use Offer Code: &lt;span&gt;“SHIPFREE”&lt;/span&gt;.&lt;/span&gt;<br />
+									  &lt;/div&gt;<br />
+									  &lt;button type="button" class="btn"&gt;Shop Now&lt;/button&gt;<br />
+									&lt;/div&gt;<br />
+	    							</div><br /><br />
+									<a href="assets/img/html_content_3.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_3.png" alt=""/>
+									</a>
+								</p><br/>
+
+								<p>
+									<h3>Banner4 - Home page</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+									Name : <strong>Banner4 - Home page</strong> <br />
+									Then click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+		    						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">
+									&lt;div class="html4 hidden-sm hidden-xs"&gt;<br />
+									  &lt;div class="html4-inner"&gt;<br />
+									    &lt;div class="left-banner"&gt;<br />
+									      &lt;div class="promo-text-box"&gt;<br />
+									        &lt;span class="promo-title"&gt;EXCLUSIVE&lt;/span&gt;<br />
+									      &lt;/div&gt;<br />
+									      &lt;div class="promo-desc"&gt;WOMENS ATTITUDE&lt;/div&gt;<br />
+									    &lt;/div&gt;<br />
+									  &lt;/div&gt;<br />
+									&lt;/div&gt;<br />
+	    							</div><br /><br />
+									<a href="assets/img/html_content_4.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_4.png" alt=""/>
+									</a>
+								</p><br/>
+
+			 					<p>
+									<h3>Left cms - Footer</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+		    						Name : <strong>Left cms - Footer</strong> <br />
+									Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+							    	Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">								        
+										&lt;div class="footer_aboutus"&gt;<br />
+										   &lt;a href="#"&gt;<br />
+										    &lt;img alt="" src="image/catalog/logo.png"&gt;<br />
+										  &lt;/a&gt;<br />
+										   &lt;div&gt;<br />
+										      &lt;p class="footer-desc"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;<br />
+										      &lt;div class="social-media"&gt;<br />
+										         &lt;li&gt; &lt;a href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/li&gt;<br />
+										         &lt;li&gt; &lt;a href="#"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/li&gt;<br />
+										         &lt;li&gt; &lt;a href="#"&gt;&lt;i class="fa fa-youtube-play"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/li&gt;<br />
+										         &lt;li&gt; &lt;a href="#"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/li&gt;<br />
+										         &lt;li&gt; &lt;a href="#"&gt; &lt;i class="fa fa-pinterest-p"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/li&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/div&gt;<br />
+										&lt;/div&gt;<br />
+									</div><br /><br />
+									<a href="assets/img/html_content_5.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_5.png" alt=""/>
+									</a>
+							  	</p><br/>							  
+
+								<p>
+									<h3>Payment Method - Footer</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+									Name : <strong>Payment Method - Footer</strong><br />
+									Then click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+		    						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">
+										&lt;div class="footer_link"&gt;  &lt;img src="image/catalog/payment.png" alt=""&gt;&lt;/div&gt;
+									</div><br /><br />
+									<a href="assets/img/html_content_6.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_6.png" alt=""/>
+									</a>
+								</p><br/>
+
+								<p>
+									<h3>Right cms - Footer</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+		    						Name : <strong>Right cms - Footer</strong> <br />
+									Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+							    	Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">								        
+										&lt;h5 class="toggled title"&gt;contact&lt;/h5&gt;<br />
+										&lt;ul class="list-unstyled"&gt;<br />
+										   &lt;li&gt;<br />
+										      &lt;div class="site"&gt;<br />
+										         &lt;div class="contact_title"&gt;address:&lt;/div&gt;<br />
+										         &lt;div class="contact_site"&gt;71 Pennington Lane Vernon Rockville, CT 06066&lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/li&gt;<br />
+										   &lt;li&gt;<br />
+										      &lt;div class="phone"&gt;<br />
+										         &lt;div class="contact_title"&gt;phone:&lt;/div&gt;<br />
+										         &lt;div class="contact_site"&gt;+91 123 456 789&lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/li&gt;<br />
+										   &lt;li&gt;<br />
+										      &lt;div class="fax"&gt;<br />
+										         &lt;div class="contact_title"&gt;fax:&lt;/div&gt;<br />
+										         &lt;div class="contact_site"&gt;0123-456-789&lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/li&gt;<br />
+										   &lt;li&gt;<br />
+										      &lt;div class="email"&gt;<br />
+										         &lt;div class="contact_title"&gt;email:&lt;/div&gt;<br />
+										         &lt;div class="contact_site"&gt;&lt;a href="mailto:info@Yourstore.com"&gt;demo@Yourstore.com&lt;/a&gt;&lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/li&gt;<br />
+										&lt;/ul&gt;<br />
+									</div><br /><br />
+									<a href="assets/img/html_content_7.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_7.png" alt=""/>
+									</a>
+							  	</p><br/>
+							  	
+							  	<p>
+									<h3>Service - Home page</h3>
+									Click on <strong>Add Module</strong> to add  cms block.<br />
+		    						Name : <strong>Service - Home page</strong> <br />
+									Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content<br />
+									From status select : <strong>Enabled</strong><br />
+							    	Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+									<div class="borderclass">								        
+										&lt;div class="service-box mt-30"&gt;<br />
+										   &lt;div class="page-title"&gt;<br />
+										      &lt;h3&gt;our services&lt;/h3&gt;<br />
+										   &lt;/div&gt;<br />
+										   &lt;div class="promo-item clearfix"&gt;<br />
+										      &lt;div class="service-item"&gt;<br />
+										         &lt;div class="service"&gt;<br />
+										            &lt;div class="service-icon"&gt;&lt;/div&gt;<br />
+										            &lt;div class="service-content"&gt;<br />
+										               &lt;h4 class="promo-title"&gt;Free shipping&lt;/h4&gt;<br />
+										               &lt;span class="promo-desc"&gt;For all order over $100&lt;/span&gt;<br />
+										            &lt;/div&gt;<br />
+										         &lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										      &lt;div class="service-item"&gt;<br />
+										         &lt;div class="service"&gt;<br />
+										            &lt;div class="service-icon"&gt;&lt;/div&gt;<br />
+										            &lt;div class="service-content"&gt;<br />
+										               &lt;h4 class="promo-title"&gt;Cash On Delivery&lt;/h4&gt;<br />
+										               &lt;span class="promo-desc"&gt;100% money back&lt;/span&gt;<br />
+										            &lt;/div&gt;<br />
+										         &lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										      &lt;div class="service-item"&gt;<br />
+										         &lt;div class="service"&gt;<br />
+										            &lt;div class="service-icon"&gt;&lt;/div&gt;<br />
+										            &lt;div class="service-content"&gt;<br />
+										               &lt;h4 class="promo-title"&gt;Special Gift Card&lt;/h4&gt;<br />
+										               &lt;span class="promo-desc"&gt;Offer special bonuses&lt;/span&gt;<br />
+										            &lt;/div&gt;<br />
+										         &lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										      &lt;div class="service-item"&gt;<br />
+										         &lt;div class="service"&gt;<br />
+										            &lt;div class="service-icon"&gt;&lt;/div&gt;<br />
+										            &lt;div class="service-content"&gt;<br />
+										               &lt;h4 class="promo-title"&gt;24/7 Support&lt;/h4&gt;<br />
+										               &lt;span class="promo-desc"&gt;Answer for question&lt;/span&gt;<br />
+										            &lt;/div&gt;<br />
+										         &lt;/div&gt;<br />
+										      &lt;/div&gt;<br />
+										   &lt;/div&gt;<br />
+										&lt;/div&gt;<br />
+									</div><br /><br />
+									<a href="assets/img/html_content_8.png" target="_blank">
+										<img class="img-border" src="assets/img/html_content_8.png" alt=""/>
+									</a>
+							  	</p><br/>
+							</p>	
+		  				</div>
+		  			</div>			
+			</section>
+			<!-- <div class="clear"></div>
+			<section id="producttab">
+				<h2 id="producttab" style="padding-top:30px;"> Method 7 : Mahardhi Product Tabs </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		and then select <strong>Mahardhi Product Tab</strong> &gt; Edit<br />
+							For Homepage Module,<br />
+						  	Name : <strong>Top Products</strong><br />
+						  	select checkbox <strong>Latest Bestseller Special</strong><br />
+							Limit : <strong>20</strong><br />
+							Image size : <strong> 177 X 236 </strong><br />
+							From Status select : <strong>Enable</strong><br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+							<a href="assets/img/producttab.png" target="_blank">
+								<img class="img-border" src="assets/img/producttab.png" alt=""/>
+							</a>
+						</p>
+					</div>
+				</div>
+				<h2 style="padding-top:30px;">Mahardhi Product tab Key</h2>
+				<p>
+					Add <b>mahardhi_product_tab.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+				</p>
+				<p>
+					Add <b>mahardhi_product_tab.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+				</p>				
+				<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+				<p><strong>Route:</strong> extenstion/module/mahardhi_product_tab</p>
+				<p><strong>Key:</strong></p>
+				<ul style="padding-left: 30px;">
+					<li>heading_title</li>
+					<li>tab_latest</li>
+					<li>tab_bestseller</li>
+					<li>tab_featured</li>
+					<li>tab_special</li>
+					<li>button_wishlist</li>
+					<li>button_compare</li>
+					<li>text_tax</li>
+				</ul>
+			</section> -->
+			<div class="clear"></div>
+			<section id="featured">
+				<h2 id="featured" style="padding-top:30px;"> Method 7 : Featured Products </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		and then select <strong>Featured</strong>&gt; Edit<br />
+							For Homepage Module,<br />
+						  	Name : <strong>Featured - Home page</strong><br />
+						  	Limit : <strong>20</strong><br />
+						  	Image size : <strong>245 X 245</strong><br />
+						  	Status : <strong>Enabled</strong><br />					 
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+   						<p>
+   							<a href="assets/img/featured.png">
+   								<img class="img-border" src="assets/img/featured.png"/>
+   							</a>
+   						</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="clear"></div>
+			<section id="special">
+				<h2 id="special" style="padding-top:30px;"> Method 8 : Special Products </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		and then select <strong>Special</strong>&gt; Edit<br />
+							For Homepage Module,<br />
+						  	Name : <strong>Special - Home page</strong><br />
+						  	Limit : <strong>20</strong><br />
+						  	Image size : <strong>210 X 210</strong><br />
+						  	Status : <strong>Enabled</strong><br />					 
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+   						<p>
+   							<a href="assets/img/special.png">
+   								<img class="img-border" src="assets/img/special.png"/>
+   							</a>
+   						</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="clear"></div>
+			<section id="bestseller">
+				<h2 id="bestseller" style="padding-top:30px;"> Method 9 : Bestseller Products</h2>
+				<div class="containers">
+				<div class="text">
+				<p>
+					Go to Admin  <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					And then select <strong>Bestseller</strong>&gt; Edit ( If Edit link is not active then Click on Install link)<br/>
+					Click <strong>+ Add New </strong> button.<br />
+					Name : <strong>Bestseller sidebar</strong><br />
+					Limit : <strong>4</strong><br />
+					Image size : <strong>80 X 80</strong><br />
+					From Status select : <strong>Enabled</strong><br />
+					Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+					<br/>
+					<p>
+					<a href="assets/img/bestseller.png" target="_blank">
+						<img class="img-border" src="assets/img/bestseller.png" alt=""/>
+					</a>
+					</p>
+				</p>
+				</div>
+				</div>
+			</section>
+
+			<div class="clear"></div>
+			<section id="latest">
+				<h2 id="latest" style="padding-top:30px;"> Method 10 : Latest Products</h2>
+				<div class="containers">
+				<div class="text">
+				<p>
+					Go to Admin  <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					And then select <strong>Latest</strong>&gt; Edit ( If Edit link is not active then Click on Install link)<br/>
+					Click <strong>+ Add New </strong> button.<br />
+					Name : <strong>Latest sidebar</strong><br />
+					Limit : <strong>4</strong><br />
+					Image size : <strong>80 X 80</strong><br />
+					From Status select : <strong>Enabled</strong><br />
+					Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+					<br/>
+					<p>
+					<a href="assets/img/latest.png" target="_blank">
+						<img class="img-border" src="assets/img/latest.png" alt=""/>
+					</a>
+					</p>
+				</p>
+				</div>
+				</div>
+			</section>
+
+			<div class="clear"></div>
+			<section id="dealofday">
+				<h2 id="dealofday" style="padding-top:30px;"> Method 11 : Mahardhi Special Countdown </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		and then select <strong>Mahardhi Special Countdown</strong> &gt; Edit<br />
+							For Homepage Module,<br />
+						  	Name : <strong>Deal of the day</strong><br />
+							Limit : <strong>20</strong><br />
+							Image size : <strong> 250 X 250 </strong><br />
+							From Status select : <strong>Enable</strong><br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+							<a href="assets/img/specialcountdown.png" target="_blank">
+								<img class="img-border" src="assets/img/specialcountdown.png" alt=""/>
+							</a>
+						</p><br/>
+						<p>
+							<strong>Set Special Product For Deal of the day</strong><br />
+							Go to Admin <strong>&gt; Catalog > Products</strong><br />
+							And then Click <strong>Edit</strong> button ( If Edit )  Or Create New Product Click <strong>+ Add New </strong> button.<br />							
+							Now you will see tabs (General, Data, Links, Discount, Special, and Design, etc) Choose<strong> Special tab </strong>and click <strong>Add Special </strong>button.<br />
+					    	
+							And Add Detail (Price, Date Start, Date End).<br/>
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+							<br/>
+							<a href="assets/img/countdown1.png" target="_blank">
+								<img class="img-border" src="assets/img/countdown1.png" alt=""/>
+							</a>
+						</p>
+					</div>
+				</div>
+				<h2 style="padding-top:30px;">Mahardhi Special Countdown Key</h2>
+				<p>
+					Add <b>special_countdown.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+				</p>
+				<p>
+					Add <b>special_countdown.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+				</p>				
+				<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+				<p><strong>Route:</strong> extenstion/module/special_countdown</p>
+				<p><strong>Key:</strong></p>
+				<ul style="padding-left: 30px;">
+					<li>text_tax</li>
+					<li>text_days</li>
+					<li>text_hours</li>
+					<li>text_minutes</li>
+					<li>text_seconds</li>
+					<li>text_expired</li>
+					<li>text_hot</li>
+					<li>text_save</li>
+					<li>product_unavailable</li>
+					<li>product_available</li>
+				</ul>
+			</section>
+
+			<div class="clear"></div>
+			<section id="mahardhicategory">
+				<h2 id="mahardhicategory" style="padding-top:30px;"> Method 12 : Mahardhi Category </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		and then select <strong>Mahardhi Category</strong> &gt; Edit<br />
+							For Homepage Module,<br />
+						  	Module Name : <strong>Category Menu</strong><br />
+						  	From Status select : <strong>Enable</strong><br />
+						  	Menu Columns : <strong>4</strong><br />
+							Menu Dropdown Levels : <strong>4</strong><br />
+							Choose Menu Category : <strong> Select Category </strong>(Click On Add to Menu button)<br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+							<a href="assets/img/mahardhicategory.png" target="_blank">
+								<img class="img-border" src="assets/img/mahardhicategory.png" alt=""/>
+							</a>
+						</p>
+					</div>
+				</div>
+				<h2 style="padding-top:30px;">Mahardhi Category Key</h2>
+				<p>
+					Add <b>mahardhi_category.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+				</p>
+				<p>
+					Add <b>mahardhi_category.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+				</p>				
+				<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+				<p><strong>Route:</strong> extenstion/module/mahardhi_category</p>
+				<p><strong>Key:</strong></p>
+				<ul style="padding-left: 30px;">
+					<li>heading_title</li>
+					<li>text_blog</li>
+					<li>text_all</li>
+					<li>text_home</li>
+				</ul>
+			</section>
+			
+		  	<div class="clear"></div>
+			<section id="Mahardhiblog">
+				<h2 id="Mahardhiblog" style="padding-top:30px;"> Method 13 : Mahardhi Blog</h2>				
+				<h2 id="homeblog" style="padding-top:30px;"> Category Blog</h2>
+				<div class="containers">
+					<div class="text">
+	  					<p>
+						    Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+						    And then select <strong>Mahardhi Blog</strong> &gt;  Edit  ( If Edit link is not active then Click on Install link)<br />
+						   	And then click <strong>Article Blog Categories</strong>  left side of then  show Categories <br /><br />
+	  						<a href="assets/img/CaterogyBlog.png" target="_blank">
+	     						<img class="img-border" src="assets/img/CaterogyBlog.png" alt=""/>
+	   						</a>
+	   					</p>
+	   					<br/>
+	  					<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />And then select <strong>Mahardhi Blog</strong> &gt; Edit <br />
+							And then click <strong>categories</strong>  top of Header part <br />
+						    Now click on <strong>+ Add new</strong> button<br/>
+						    Category Blog Name : <strong> Blogs</strong><br/>						   	
+							From Status select : <strong>Enabled</strong><br />
+							Sort order : <strong>1</strong><br />
+						    Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>						   
+	  					</p><br/>
+	    				<p>
+					    <a href="assets/img/caterogyblog_1.png" target="_blank">
+					      <img class="img-border" src="assets/img/caterogyblog_1.png" alt=""/>
+					    </a>
+	  					</p><br />	 					
+					</div>
+				</div>
+				<div class="clear"></div>
+				<h2 id="homeblog" style="padding-top:30px;">Article List</h2>
+				<div class="containers">
+					<div class="text">
+	  					<p>
+						    Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+						    And then select <strong>Mahardhi Blog</strong> &gt; Edit<br />
+						    And then click on <strong> Article List</strong> &gt; top of Header part<br />
+						    <p>
+	   							<a href="assets/img/articleblogs.png" target="_blank">
+	   								<img class="img-border" src="assets/img/articleblogs.png" alt=""/>
+	   							</a>
+	   						</p>
+						    now click on <strong>+ Add new</strong> button.<br/>
+	   						<p>
+	   							<a href="assets/img/articleblogs_1.png" target="_blank">
+	   								<img class="img-border" src="assets/img/articleblogs_1.png" alt=""/>
+	   							</a>
+	   						</p>	   						
+	   						Article Name : <strong>The standard Lorem Ipsum</strong> <br />
+	   						And then Introduction Text : <strong>Code View </strong>button in text editor block and write your Blog introduction text,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Meta Tag Title : <strong>The standard Lorem Ipsum</strong> <br />
+	   						Article Image : <strong> you can upload your Blog image</strong><br/>
+	   						Show categories : <strong>click check box</strong><br />
+	   						From Status select : <strong>Enabled</strong><br />
+	   						and then Sort order : <strong>1</strong><br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	   						</div>
+	   						<h4>Description</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	   						</div><br />
+	   						<p>
+	   							<a href="assets/img/blog_g1.png" target="_blank">
+	   								<img class="img-border" src="assets/img/blog_g1.png" alt=""/>
+	   							</a>
+	   						</p><br /><br />
+
+	   						Article Name : <strong> Nam nec rhoncus est </strong> <br />
+	   						And then Introduction Text : <strong>Code View </strong>button in text editor block and write your Blog introduction text,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Meta Tag Title : <strong> Nam nec rhoncus est </strong> <br />
+	   						Article Image : <strong> you can upload your Blog image</strong><br/>
+	   						Show categories : <strong>click check box</strong><br />
+	   						From Status select : <strong>Enabled</strong><br />
+	   						and then Sort order : <strong>1</strong><br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	   						</div>
+	   						<h4>Description</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	   						</div><br />
+
+	   						Article Name : <strong>Lorem Ipsum Dolo</strong> <br />
+	   						And then Introduction Text : <strong>Code View </strong>button in text editor block and write your Blog introduction text,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Meta Tag Title : <strong> 	Lorem Ipsum Dolo</strong> <br />
+	   						Article Image : <strong> you can upload your Blog image</strong><br/>
+	   						Show categories : <strong>click check box</strong><br />
+	   						From Status select : <strong>Enabled</strong><br />
+	   						and then Sort order : <strong>1</strong><br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	   						</div>
+	   						<h4>Description</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	   						</div><br />  
+
+	   						Article Name : <strong>Duis pulvinar augue nisi</strong> <br />
+	   						And then Introduction Text : <strong>Code View </strong>button in text editor block and write your Blog introduction text,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Meta Tag Title : <strong>Duis pulvinar augue nisi</strong> <br />
+	   						Article Image : <strong> you can upload your Blog image</strong><br/>
+	   						Show categories : <strong>click check box</strong><br />
+	   						From Status select : <strong>Enabled</strong><br />
+	   						and then Sort order : <strong>1</strong><br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	   						</div>
+	   						<h4>Description</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	   						</div><br /> 						
+
+	   						Article Name : <strong>Consectetur adipiscing</strong> <br />
+	   						And then Introduction Text : <strong>Code View </strong>button in text editor block and write your Blog introduction text,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description,After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Meta Tag Title : <strong>Consectetur adipiscing</strong> <br />
+	   						Article Image : <strong> you can upload your Blog image</strong><br/>
+	   						Show categories : <strong>click check box</strong><br />
+	   						From Status select : <strong>Enabled</strong><br />
+	   						and then Sort order : <strong>1</strong><br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	   						</div>
+	   						<h4>Description</h4>
+	   						<div class="borderclass">
+	   							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	   						</div><br />  
+
+	   					</p>
+					</div>
+				</div>
+				<div class="containers">
+					<div class="text">
+						<h2 id="homeblog" style="padding-top:30px;"> Latest Blog</h2>
+						<p>
+						 	Go to Admin &gt;<strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		And then select <strong>Mahardhi Blog</strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+							Module Name : <strong>Our Blogs</strong><br />
+					    	Heading title : <strong>Latest Blog</strong><br />
+					    	Give Image size width and height : <strong>333 X 222</strong><br />
+					    	The date format for material : <strong>d F Y</strong><br />
+					    	From Status :  <strong>Enable</strong> select <br />
+					    	Auto Slide : <strong>Yes</strong> select<br />
+							Item : <strong>4</strong><br />
+					    	Slide Speed : <strong>3000</strong><br />
+							Rows : <strong>1</strong><br />
+							Show Navigation : <strong>Yes</strong> select<br />
+					    	Show Pagination :  <strong>No</strong> select <br />						
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+							<br/>
+							<a href="assets/img/mahardhiblog.png" target="_blank">
+								<img class="img-border" src="assets/img/mahardhiblog.png" alt=""/>
+							</a>
+						</p><br/>
+	  				</div>
+				</div>
+				<div class="clear"></div>
+				<div class="containers">
+					<div class="text">
+						<h2 id="homeblog" style="padding-top:30px;">Blog Setting</h2>
+						<p>
+						 	Go to Admin &gt;<strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		And then select <strong>Mahardhi Blog</strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+					   		And then click on <strong> Article List</strong> &gt; top of Header part<br /><br />
+					   		<a href="assets/img/setting article.png" target="_blank">
+								<img class="img-border" src="assets/img/setting article.png" alt=""/>
+							</a>
+							<p>This setting for Article List page images and the single Article List page image</p>
+							Default Blog Per Page  : <strong>9</strong><br />
+					    	Meta Title : <strong>Blog</strong><br />
+					    	Meta Tag Description : <strong>Blog Description</strong><br />
+					    	Meta Tag Keywords : <strong>Blog Keyword</strong><br />
+					    	Give Image size for Article List images width and height : <strong>433 X 287</strong><br />
+					    	Give Image size for Article images width and height : <strong>1350 X 900</strong><br />
+					    	The date format for material : <strong>d F Y</strong><br />		    							
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+							<br/>
+							<a href="assets/img/setting_blog.png" target="_blank">
+								<img class="img-border" src="assets/img/setting_blog.png" alt=""/>
+							</a>
+						</p>
+	  				</div>
+				</div>
+				<h2 style="padding-top:30px;">Blog Key</h2>
+				<p>
+					Add <b>blog.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+				</p>
+				<p>
+					Add <b>blog.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+				</p>				
+				<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+				<p><strong>Route:</strong> extenstion/module/blog</p>
+				<p><strong>Key:</strong></p>
+				<ul style="padding-left: 30px;">
+					<li>text_more</li>
+					<li>text_date_added</li>
+					<li>text_viewed</li>
+					<li>text_comment</li>
+					<li>button_list</li>
+				</ul>
+				<div class="clear"></div>
+			</section>
+			<div class="clear"></div>
+			<section id="MahardhiTestimonial">
+				<h2 id="MahardhiTestimonial" style="padding-top:30px;"> Method 14 :Mahardhi Testimonial</h2>
+				
+				<h2 id="homeblog" style="padding-top:30px;">Post</h2>
+				<div class="containers">
+					<div class="text">
+	  					<p>
+						    Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+						    And then select <strong>Mahardhi Testimonial</strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+						    And then click <strong> Button </strong> &gt; on Top of header then near Save button <br />
+						    
+						    now click on <strong>+ Add new or Edit</strong> button.<br/>
+	   						<p>
+	   							<a href="assets/img/testimonial_1.png" target="_blank">
+	   								<img class="img-border" src="assets/img/testimonial_1.png" alt=""/>
+	   							</a>
+	   						</p>
+	   						Customer Name : <strong>Jennifer</strong> <br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description, After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Status : <strong>Enabled</strong> <br />
+	   						Image File : <strong>you can upload your testimonial image. </strong> <br />
+	   						Sort Ordere : <strong>1</strong> <br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+	   						</div><br /><br />
+	   						<p>
+	   							<a href="assets/img/testimonial_g1.png" target="_blank">
+	   								<img class="img-border" src="assets/img/testimonial_g1.png" alt=""/>
+	   							</a>
+	   						</p><br />
+
+	   						Customer Name : <strong>John Deo</strong> <br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description, After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Status : <strong>Enabled</strong> <br />
+	   						Image File : <strong>you can upload your testimonial image. </strong> <br />
+	   						Sort Ordere : <strong>1</strong> <br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+	   						</div><br />
+
+	   						Customer Name : <strong>Luies Charles</strong> <br />
+	   						And then Description : <strong>Code View </strong>button in text editor block and write your Blog description, After this again click <strong>Code View </strong> to save your blog content<br />
+	   						Status : <strong>Enabled</strong> <br />
+	   						Image File : <strong>you can upload your testimonial image. </strong> <br />
+	   						Sort Ordere : <strong>1</strong> <br />
+	   						Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+	   						<h4>Introduction Text</h4>
+	   						<div class="borderclass">
+	   							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+	   						</div><br />
+	   						
+	   					</p>
+					</div>
+				</div>
+				<div class="containers">
+					<div class="text">
+						<h2 id="homeblog" style="padding-top:30px;">Testimonial</h2>
+						<p>
+						 	Go to Admin &gt;<strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					   		And then select <strong>Maharthi Testimonial</strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+							Module Name : <strong>Testimonial</strong><br />
+					    	title : <strong>Testimonial</strong><br />
+					    	Status : <strong>Enabled</strong> <br />
+							Testimonial Image Width & Height : <strong>100 X 100</strong><br />
+							Auto Slide : <strong>Yes</strong> select<br />
+							Items : <strong>1</strong><br />
+							Limit : <strong>10</strong><br />
+					    	Slide Speed : <strong>3000</strong><br />
+							Rows : <strong>1</strong><br />
+							Show Navigation : <strong>No</strong> select<br />
+					    	Show Pagination :  <strong>Yes</strong> select <br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+							<br/>
+							<a href="assets/img/mahardhi_testimonial.png" target="_blank">
+								<img class="img-border" src="assets/img/mahardhi_testimonial.png" alt=""/>
+							</a>
+						</p><br/>
+	  				</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+			<div class="clear"></div>
+			<section id="newsletter">
+	   			<h2 id="newsletter" style="padding-top:30px;"> Method 15 : Mahardhi Newsletter </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+						    Go to Admin &gt; <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					        And then select <strong> Mahardhi Newsletter </strong> &gt; Edit  ( If Edit link is not active then Click on Install link) <br />
+					        Newslatter Name : <strong>Newslatter</strong><br />
+					        popup : <strong>Enable</strong> (For Newslatter popup if you want to popup newslatter then select Enable)<br />
+							From Status select : <strong>Enable</strong><br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br />
+							<a href="assets/img/newsletter.png" target="_blank">
+	     						<img class="img-border" src="assets/img/newsletter.png" alt=""/>
+	   						</a><br/>
+						</p>
+					</div>
+				</div>
+				<h2 id="newsletter" style="padding-top:30px;"> Newsletter Popup </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+						    Go to Admin &gt; <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					        And then select <strong> Mahardhi Newsletter </strong> &gt; Edit  ( If Edit link is not active then Click on Install link) <br />
+					        Newslatter Name : <strong>Newsletter popup</strong><br />
+					        popup : <strong>Enable</strong> (For Newslatter popup if you want to popup newslatter then select Enable)<br />
+							From Status select : <strong>Enable</strong><br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/><br />
+							<a href="assets/img/newsletterpopup.png" target="_blank">
+	     						<img class="img-border" src="assets/img/newsletterpopup.png" alt=""/>
+	   						</a><br/><br/>
+						</p>
+					</div>
+				</div>
+				<div class="containers">
+					<div class="text">
+						<h2 id="homeblog" style="padding-top:30px;">Mahardhi Newsletter Key</h2>
+						<p>
+							Add <b>mahardhi_newsletter.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+						</p>
+						<p>
+							Add <b>mahardhi_newsletter.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+						</p>
+						<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+						<p><strong>Route:</strong> extenstion/module/mahardhi_newsletter</p>
+						<p><strong>Key:</strong></p>
+						<ul style="padding-left: 30px;">
+							<li>newsletter_title</li>
+							<li>newsletter_description</li>
+							<li>newsletter_title_popup</li>
+							<li>newsletter_description_popup</li>
+							<li>entry_user_email</li>
+							<li>entry_subscribe</li>
+							<li>entry_unsubscribe</li>
+							<li>entry_show_again</li>
+							<li>error_message</li>
+							<li>success_subscribe</li>
+							<li>success_unsubscribe</li>
+							<li>already_subscribe</li>
+							<li>error_exist</li>
+						</ul>
+						<br/>
+	  				</div>
+				</div>
+			</section>
+			
+			<div class="clear"></div>
+			<section id="mahardhisearch">
+		  		<h2 id="mahardhisearch" style="padding-top:30px;"> Method 16 : Mahardhi Search </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					    	And then select <strong>Mahardhi Search</strong> &gt; Edit<br />
+							From Status select: <strong>Enabled</strong> <br />
+							Autocomplete :  <strong>Enabled</strong> (If add Autocomplete option)<br />
+							Category :  <strong>Enabled</strong> (If add category option)<br />
+							Click on <strong>Save</strong> button.<br /><br />
+							<a href="assets/img/mahardhisearch.png" target="_blank">
+								<img class="img-border" src="assets/img/mahardhisearch.png" alt=""/>
+							</a>
+						</p>
+					</div>
+				</div>
+				<h2 id="homeblog" style="padding-top:30px;">Mahardhi Search Key</h2>
+				<p>
+					Add <b>mahardhi_search.php</b> from the catalog/language/en-gb/extension/module folder to catalog/language/your_language/extension/module folder
+				</p>
+				<p>
+					Add <b>mahardhi_search.php</b> from the admin/language/en-gb/extension/module folder to admin/language/your_language/extension/module folder
+				</p>
+				<p><strong>Admin:</strong> Navigation/Design/Language Editor/Add New</p>
+				<p><strong>Route:</strong> extenstion/module/mahardhi_search</p>
+				<p><strong>Key:</strong></p>
+				<ul style="padding-left: 30px;">
+					<li>text_search</li>
+					<li>text_category</li>
+					<li>text_sub_category</li>
+					<li>entry_search</li>
+					<li>entry_description</li>
+				</ul>
+			</section>
+			<div class="clear"></div>
+			<section id="account">
+		  		<h2 id="account" style="padding-top:30px;"> Method 17 : Account </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+							Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+					    	And then select <strong>Account</strong> &gt; Edit<br />
+							From Status select: <strong>Enable</strong> <br />
+							Click on <strong>Save</strong> button.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="clear"></div>
+	  		<section id="information">
+				<h2 id="information" style="padding-top:30px;"> Method 18 : Information </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+		  					Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	    					And Then select <strong>Information</strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+							From Status select: <strong>Enable</strong> <br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="filter">
+				<h2 id="filter" style="padding-top:30px;"> Method 19 : Filter </h2>
+				<div class="containers">
+					<div class="text">
+						<p>
+		  					Go to Admin <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	    					And Then select <strong> Filter </strong> &gt; Edit ( If Edit link is not active then Click on Install link)<br />
+							From Status select: <strong>Enable</strong> <br />
+							Click on &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p>
+					</div>
+				</div>
+			</section>		
+			
+			<section id="carousel">
+				<h2 id="carousel" style="padding-top:30px;"> Method 20 : Carousel </h2>
+				<div class="containers">
+					<div class="text">
+						<h3 class="title1" id="mainbanner" style="padding-top:10px;"> Main Banner </h3>
+						<p>
+		        			Goto Admin  <strong>Design &gt; Banners</strong><br />
+							Now &rdquo;<strong>+ Add New </strong>&rdquo;  button.<br />
+							Banner name : <strong> Manufacturers </strong><br />
+						 	Status : <strong>Enabled</strong><br />
+							and then  click  on <strong>+ Add </strong> button<br />
+		        			<strong>set size of each image banner of your site</strong>
+							Give title of your banner  and click on image to upload your banner<br />
+							and then again click on <strong> + Add </strong> button and upload another banners<br />
+							then click &rdquo;<strong>Save</strong>&rdquo; button.<br/>
+						</p><br/>
+						<a href="assets/img/carousel_1.png" target="_blank">
+							<img class="img-border" src="assets/img/carousel_1.png" alt=""/>
+						</a>
+						<br/>
+		      			<h3>Main Banner activation</h3>
+						Go to Admin <strong>Extensions</strong>  &gt; <strong>Extensions</strong> &gt;  <strong>Modules</strong>from Dropdown.<br />
+			       		Now select <strong>Carousel</strong>, then &gt; Edit &gt; button<br />
+						Module Name : <strong>Carousel - Home Page </strong><br />
+						Banner : <strong> Manufacturers </strong> select<br />
+						Give Width and Height : <strong> 76 X 40 </strong><br />
+						Status select : <strong>Enabled</strong><br />
+						click on  &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+						<a href="assets/img/carousel.png" target="_blank">
+							<img class="img-border" src="assets/img/carousel.png" alt=""/>
+						</a>				  		
+						<div class="clear bottom-space"></div>
+				  		<div class="clear"></div>				  		
+				  	</div>
+				</div>
+			</section>
+
+			<section id="contactus">
+				<h2 id="contactus" style="padding-top:30px;"> Method 21 : Contact us </h2>
+				<div class="containers">
+					<div class="text">
+						<p>Goto Admin  <strong> System &gt; Setting &gt; &ldquo; your store &rdquo; Edit &gt; Store</strong> (Store tab).<br />
+		      			<strong>tab then set Details About your themes of your site.</strong>
+		      			Select Store &gt; <strong>Edit</strong>			      		
+			      			<p>Select <strong>Store</strong> tab</p>
+			      			Store Name : <strong>Your Store</strong><br />
+							Store Owner : <strong> My Store </strong><br />
+							Address : <strong> 71 Pennington Lane Vernon Rockville, CT 06066 </strong><br />
+							Geocode : <strong> 71 Pennington Lane Vernon Rockville, CT 06066 </strong> (it's Optional) <br />
+							E-Mail : <strong> yourstore@yourstore.com </strong><br />
+							Telephone : <strong> 123-456-7890 </strong> <br />
+							Fax : <strong> 11225553321 </strong> <br />
+							Opening Times : <strong> 11:00 AM - 7:00 PM </strong><br />
+							Comment : <strong> Demo Comment Description from Store Owner </strong> select<br />
+							click on  &rdquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+							<p>
+								<a href="assets/img/contact.png" target="_blank">
+									<img class="img-border" src="assets/img/contact.png" alt=""/>
+								</a>
+							</p>
+						</p><br/>
+					</div>
+				</div>
+			</section>
+			<div class="clear"></div> 	 		
+			<section id="layoutsetting">
+				<h2 id="layoutsetting" style="padding-top:30px;"> Method 22 : Layout Setting </h2>
+				<div class="containers">
+					<div class="text">
+						For Layout Setting  Go to&nbsp; <strong> Design &gt; Layouts</strong>, <br />
+						<h4>Home</h4>
+						<p>Layout setting Click on Home layout Edit link.</p>
+						<p>
+							<a href="assets/img/layout_home.png" target="_blank">
+								<img class="img-border" src="assets/img/layout_home.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Account </h4>
+						<p>Layout setting Click on Account layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Affiliate </h4>
+						<p>Layout setting Click on Affiliate layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts1.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts1.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Category </h4>
+						<p>Layout setting Click on Category layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts2.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts2.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Checkout </h4>
+						<p>Layout setting Click on Checkout layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts3.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts3.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Compare </h4>
+						<p>Layout setting Click on Compare layout Edit link.</p>
+						<p>
+							<a href="assets/img/Layouts4.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts4.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Contact </h4>
+						<p>Layout setting Click on Contact layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts5.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts5.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Default </h4>
+						<p>Layout setting Click on Default layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts6.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts6.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Information </h4>
+						<p>Layout setting Click on Information layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts7.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts7.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Manufacture </h4>
+						<p>Layout setting Click on Manufacture layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts8.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts8.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Product </h4>
+						<p>Layout setting Click on Product layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts9.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts9.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Search </h4>
+						<p>Layout setting Click on Search layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts10.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts10.png" alt=""/>
+							</a>
+						</p><br/>
+						<h4> Sitemap </h4>
+						<p>Layout setting Click on Sitemap layout Edit link.</p>
+						<p>
+							<a href="assets/img/layouts11.png" target="_blank">
+								<img class="img-border" src="assets/img/layouts11.png" alt=""/>
+							</a>
+						</p><br/>
+					</div>
+				</div>
+
+				<h2 id="additional" style="padding-top:30px;">Method 23 : Additional Setting</h2>
+				<div class="text">
+					(1) Change Loader Image: <strong>/catalog/view/theme/mahardhi/image/mahardhi/ajax_loader.gif</strong>
+				</div><br>
+
+				<div class="text">
+					(2) Change Newsletter Popup Image: <strong>/catalog/view/theme/mahardhi/image/mahardhi/newsletter-popup.jpg</strong>
+				</div><br>
+				
+				<div class="text">
+					(3) "More" Text In Header Menu: You can translate "More" menu<br>
+					&nbsp; &nbsp; &nbsp;<strong>/catalog/view/javascript/mahardhi/custom.js</strong><br>
+					&nbsp; &nbsp; &nbsp;You can edit below code for "More" text translate (line number:461)<br>
+					&nbsp; &nbsp; &nbsp;$('.hiden_menu').prepend('&lt;a href="#" id="more_cat" class="menulist"&gt;More&lt;/a&gt;');
+				</div><br>
+				<div class="text">
+					(4) "More Categories" Text In Top Categories: You can translate "More Categories" menu<br>
+					&nbsp; &nbsp; &nbsp;<strong>/catalog/view/javascript/mahardhi/custom.js</strong><br>
+					&nbsp; &nbsp; &nbsp;You can edit below code for "More Categories" text translate<br>
+					&nbsp; &nbsp; &nbsp;<strong>(line number:418) </strong>$('ul.category-list').append('&lt;li class="more"&gt;&lt;a class="more-menu"&gt;&lt;span class="categories"&gt;More Categories&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;');<br>
+					&nbsp; &nbsp; &nbsp;<strong>(line number:429) </strong>$('.more-menu').html('&lt;span class="categories"&gt;More Categories&lt;/span&gt;');<br>
+					&nbsp; &nbsp; &nbsp;You can also edit below code for "Less Categories" text translate<br>
+					&nbsp; &nbsp; &nbsp;<strong>(line number:437) </strong>$('.more-menu').html('&lt;span class="categories"&gt;Less Categories&lt;/span&gt;');
+				</div><br>
+				<div class="text">
+					(5) If you have problem of <strong>quickview</strong> then you can update this code otherwise ignore<br>
+					&nbsp; &nbsp; &nbsp;If Quickview not open then need to update below code <br><br>
+					&nbsp; &nbsp; &nbsp;=== Need to update <strong>controller</strong> file, where we export products data (all controllers files): ===<br>
+					&nbsp; &nbsp; &nbsp;<strong>Old Code:</strong> <br>
+					&nbsp; &nbsp; &nbsp;'href' =&gt; $this-&gt;url-&gt;link('product/product', 'product_id=' . $product_info['product_id'])<br>
+					&nbsp; &nbsp; &nbsp;<strong>New Code:</strong><br>
+					&nbsp; &nbsp; &nbsp;'href' =&gt; $this-&gt;url-&gt;link('product/product', 'product_id=' . $product_info['product_id']),<br>
+					&nbsp; &nbsp; &nbsp;'quick_link' =&gt; $this-&gt;url-&gt;link('product/quickview', 'product_id=' . $product_info['product_id'])<br><br>
+					&nbsp; &nbsp; &nbsp;=== Update all <strong>twig</strong> file where product quick view button part: ===<br>
+					&nbsp; &nbsp; &nbsp;<strong>Old Code:</strong> <br>
+					&nbsp; &nbsp; &nbsp;onclick="quickView.ajaxView('{{ product.href }}');"&gt;&lt;/button&gt;<br>
+					&nbsp; &nbsp; &nbsp;<strong>New Code:</strong><br>
+					&nbsp; &nbsp; &nbsp;onclick="quickView.ajaxView('{{ product.quick_link }}');"&gt;&lt;/button&gt;<br><br>
+					&nbsp; &nbsp; &nbsp;<strong>Path - /catalog/view/javascript/mahardhi/quickview.js </strong><br>
+					&nbsp; &nbsp; &nbsp;<strong>Need to remove this code:</strong><br>
+					&nbsp; &nbsp; &nbsp;if(url.search('route=product/product') != -1) {<br>
+					&nbsp; &nbsp; &nbsp;url = url.replace('route=product/product', 'route=product/quickview');<br>
+					&nbsp; &nbsp; &nbsp;} else {<br>
+					&nbsp; &nbsp; &nbsp;url = 'index.php?route=product/quickview/seoview&amp;ourl=' + url;<br>
+					&nbsp; &nbsp; &nbsp;}<br>
+				</div><br>
+
+				<div class="text">
+					(6) Change Header "My Cart" Text: <br>
+					&nbsp; &nbsp; &nbsp;<strong>/catalog/language/your_language/common/cart.php</strong><br>
+					&nbsp; &nbsp; &nbsp;<strong>/catalog/language/your_language/checkout/cart.php</strong><br>
+					&nbsp; &nbsp; &nbsp;$_['text_items']     = '&lt;span class="cart-item"&gt;%s&lt;/span&gt;&lt;span&gt;My Cart -&lt;/span&gt;&lt;span&gt; %s&lt;/span&gt;';<br>
+				</div><br>
+
+				<strong>Note:</strong> Some language entries contain special HTML or wildcard characters like <strong>http://, %s, &lt;b&gt;&lt;/b&gt; </strong>and others. Don't need to change these special words and translate only the text within these entries.
+
+
+				<h2 id="morehelp" style="padding-top:30px;">Method 24 : Support</h2>
+				<div class="text footer-bottom">
+					If you have any additional questions, which aren't covered in our documentation, feel free to email us on <a href="https://mahardhi.freshdesk.com/" target="_blank"><strong>Mahardhi</strong></a>
+				</div><br/>
+			</section>
+  			<div class="clear"></div>
+  		</div><br /><br />
+		<a href="#" class="scrollToTop"><i class=" fa fa-angle-double-up"></i></a>
+	</body>
+</html>
